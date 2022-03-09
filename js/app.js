@@ -7,7 +7,7 @@ new Typewriter(textAnim, {
 .typeString('développeur Front-End !') 
 .pauseFor(2000)
 .deleteChars(23)
-.pauseFor(500)
+.pauseFor(800)
 .typeString("graphiste !")
 .pauseFor(2500)
 .start()
