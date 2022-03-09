@@ -1,0 +1,125 @@
+@import 'library.css';
+@import 'normalize.css';
+@import 'reset.css';
+@import 'font/stylesheet.css';
+
+
+
+/* ---- defaut (mobile) ----- */
+
+body{
+    background: url(../img/background\ test.png);
+    background-size: cover;
+   
+    background-position: top;
+    font-family: 'Bergen Sans Semi';
+    font-size: 1rem;
+    color: var(--gradient_dark);
+}
+
+/* .container{
+    max-width: 1279px;
+    margin: auto;
+} */
+
+a h1{
+    color: var(--gradient_dark);
+}
+
+
+
+/* ---- end of defaut ----- */
+
+
+/* ---- small (601px - 767px) ----- */
+@media (min-width: 601px) and (max-width: 767px){
+    body{
+        background-color: blue;
+    }
+}
+/* ---- end of small ----- */
+
+
+/* ---- medium/tablette (768px - 1023px) ----- */
+@media (min-width: 768px) and (max-width: 1023px){
+    body{
+        background-color: yellow;
+    }
+}
+/* ---- end of medium ----- */
+
+
+/* ---- large/Desktop (1024px - 1279px) ----- */
+@media (min-width: 1024px){
+   
+    
+    /* header */
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img{
+        width: 3.5rem; margin-right: 0.5rem;
+    }
+
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.75rem 1rem;
+    }
+    
+    nav {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul li a{
+        color: var(--gradient_dark);
+        font-size: 1.25rem;
+    }
+
+    nav ul li a:hover{
+        text-decoration: underline;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    /* End header */
+
+    /* main */
+    .welcom {
+        margin: 10% 2rem;
+        width: 95%;
+    }
+
+    .welcom p{
+        font-size: 4.5rem;
+        color: var(--gradient_dark);
+    }
+
+}
+/* ---- end of large ----- */
+
+/* ----x large/Desktop (+ 1280px +) ----- */
+@media (min-width: 1280px){
+    .welcom p{
+        font-size: 6rem;
+    }
+}
+/* ---- end of xlarge ----- */
